@@ -22,14 +22,14 @@ repository               : "bluesaiyancodes/bluesaiyancodes.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bishal.jpg"
   name             : "Bishal Swain"
   pronouns         : # example: "she/her"  
   bio              : "Deep Learning Data Scientist in the Making."
   location         : "South Korea"
   employer         : "국립금오공과대학교"
   uri              : # URL
-  email            : "bishalswain@kumoh.ac.kr" 
+  email            : # "bishalswain@kumoh.ac.kr" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -51,7 +51,7 @@ author:
 
   # Social media
   bluesky          : # Username
-  facebook         : "blue.bishal"
+  facebook         : # "blue.bishal"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
