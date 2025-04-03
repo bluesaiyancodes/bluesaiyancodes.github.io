@@ -15,7 +15,7 @@ I'm **Bishal Swain (비샬)**, a third-year Ph.D. student at [Kumoh National Ins
 
 My research focuses on computer vision, particularly on out-of-distribution generalization, segmentation, and domain adaptation problems. Currently, I work on medical histopathology and material SEM (Scanning Electron Microscope) images.
 
-<mark>I'm planning to graduate in <i>February 2026</i> and am actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
+<mark>I'm graduating in <i>February 2026</i> and am actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
 
@@ -92,7 +92,6 @@ My research focuses on computer vision, particularly on out-of-distribution gene
     <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
     MIDL 2024 <br>
     <a href="https://raw.githubusercontent.com/mlresearch/v250/main/assets/swain24a/swain24a.pdf">[PDF]</a> <a href="https://proceedings.mlr.press/v250/swain24a.html">[Link]</a>  <a href="https://cvpr-kit.github.io/NucleiSeg-in-Histopathology-Images/">[Project Page]</a>
-  
     </h5>
   </div>
 </div>
