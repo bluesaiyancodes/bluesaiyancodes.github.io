@@ -17,6 +17,7 @@ redirect_from:
 
     <!-- Filter Buttons -->
     <div class="filter-bar">
+      <!-- The inline onclick requires filterConfs to be global, see script below -->
       <button class="filter-btn" onclick="filterConfs('all')">All</button>
       <button class="filter-btn" onclick="filterConfs('CV')">Computer Vision</button>
       <button class="filter-btn" onclick="filterConfs('ML')">Machine Learning</button>
@@ -56,7 +57,6 @@ redirect_from:
   </div>
 </div>
 
-<!-- Script Section -->
 {% raw %}
 <script>
 // 1) Convert stored ISO strings to local text
@@ -119,8 +119,6 @@ function reorderConferences() {
   const passed = cards.filter(c => c.diff <= 0);
 
   // Sort each group by ascending diff
-  // (So smaller positive -> soonest deadline is top,
-  //  and among passed: the earliest-passed conf is first.)
   upcoming.sort((a, b) => a.diff - b.diff);
   passed.sort((a, b) => a.diff - b.diff);
 
@@ -132,8 +130,8 @@ function reorderConferences() {
   passed.forEach(c => list.appendChild(c.card));
 }
 
-// 4) Filter function remains unchanged
-function filterConfs(category) {
+// 4) Attach filterConfs to the global window object so inline onclick can find it
+window.filterConfs = function(category) {
   document.querySelectorAll(".conf-card").forEach(card => {
     if (category === 'all' || card.classList.contains(category)) {
       card.style.display = 'block';
@@ -141,7 +139,7 @@ function filterConfs(category) {
       card.style.display = 'none';
     }
   });
-}
+};
 
 // INITIALIZE
 localizeDeadlines();
