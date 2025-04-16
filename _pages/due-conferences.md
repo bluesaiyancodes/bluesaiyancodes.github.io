@@ -57,6 +57,7 @@ redirect_from:
 </div>
 
 <!-- Script Section -->
+{% raw %}
 <script>
 // 1) Convert stored ISO strings to local text
 function localizeDeadlines() {
@@ -149,6 +150,7 @@ updateCountdowns();
 // Update countdown every minute
 setInterval(updateCountdowns, 60 * 1000);
 </script>
+{% endraw %}
 
 <!-- CSS Styles -->
 <style>
