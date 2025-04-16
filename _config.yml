@@ -17,6 +17,9 @@ url                      : https://bluesaiyancodes.github.io # the base hostname
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bluesaiyancodes/bluesaiyancodes.github.io"
 
+other:
+  due_conf               : "True"  # remove if you don't want to show the due.conf link
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -79,10 +82,11 @@ author:
 publication_category:
   books:
     title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  manuscripts:
+    title: 'Journal Articles'    
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -223,6 +227,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  research:
     output: true
     permalink: /:collection/:path/
 

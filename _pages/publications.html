@@ -9,6 +9,11 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
+ <!--Add link for a page for upcoming conferences-->
+{% if site.other.due_conf %}
+  <div class="wordwrap"><a href="/due-conferences">Upcoming Conferences</a></div>
+{% endif %}
+
 {% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->

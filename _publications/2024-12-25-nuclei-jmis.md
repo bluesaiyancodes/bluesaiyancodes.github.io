@@ -1,0 +1,12 @@
+---
+title: "Enhancing Nuclei Segmentation in Histology Images by Effectively Merging Task-Specific and Foundation Models"
+collection: publications
+category: manuscripts
+permalink: /publication/2024-12-25-nuclei-jmis
+excerpt: 'In this paper we propose a novel approach to bridge this gap by merging the strengths of task-specific and foundation models. We introduce a Gated Fusion Block that leverages the task-specific capabilities of U-Net-like models. This work is the extension of our work published in MICCAI 2024.'
+date: 2024-12-25
+venue: 'Journal of Multimedia Information System'
+paperurl: 'https://www.jmis.org/archive/view_article?pid=jmis-11-4-219'
+---
+<mark>DOI: <a href="https://doi.org/10.33851/JMIS.2024.11.4.219">https://doi.org/10.33851/JMIS.2024.11.4.219</a></mark>  
+Nuclei segmentation in histology images is a critical task for various diagnostic applications in digital pathology. Traditional task-specific models, such as U-Net based architectures, are adept at capturing fine-grained and local information but often struggle with integrating global contextual features. On the other hand, foundation models effectively capture coarse-level global context but lack the precision required for detailed segmentation tasks. In this work, we propose a novel approach to bridge this gap by merging the strengths of task-specific and foundation models. We introduce a Gated Fusion Block that leverages the task-specific capabilities of U-Net-like architectures and merges with generalizable knowledge from foundation models. It combines local and global representations through gated squeeze-and-excitation layer followed by adaptive feature selection and cross-attention. We demonstrate the effectiveness of this approach through extensive experimentation on multiple histology datasets. The results show significant improvements in segmentation performance, with a 12% and 17.22% increase in Dice score and mIoU, respectively, on the CryoNuSeg dataset, a 15.55% and 16.77% improvement on the NuInsSeg dataset, and a 9% improvement in both metrics for the CoNIC dataset. Our findings highlight the potential of integrating task-specific and foundation models to achieve state-of-the-art results in nuclei segmentation.

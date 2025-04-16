@@ -69,4 +69,4 @@ Graduated with First Class and Distinction with GPA 8.59
 | Certified Secure Computer User                         | EC-Council                             | 2017 | [View](https://drive.google.com/open?id=1Zw4ZEkCtWkP43BXeidZfUBvju5LRCx6s) |
 | RED HAT Certified System Adminstrator                  | Red hat                                | 2016 | [View](https://drive.google.com/open?id=10C66GJ9f0vcLOpY4uZz2qpfbz7KFUhgI) |
 
----
+
