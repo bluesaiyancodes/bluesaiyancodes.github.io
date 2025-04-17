@@ -29,7 +29,7 @@ Completed <mark>Level 4 Korean language</mark>.
 **Pondicherry University**, India  
 <small>*July 2018 – May 2020*</small>  
 Graduated with First Class and Distinction with GPA 9.36  
-Thesis Title - <mark>Study and Development of 3D Wind Pattern Visualization Models</mark>  [[link]](https://www.researchgate.net/publication/390794919_Study_and_Development_of_3D_Wind_Pattern_Visualization_Models)
+Thesis Title - <mark>Study and Development of 3D Wind Pattern Visualization Models</mark>  [[link]](https://www.researchgate.net/publication/390794919_Study_and_Development_of_3D_Wind_Pattern_Visualization_Models)  
 Supervisors - Asst. Prof. [Dr. T. Sivakumar](https://www.pondiuni.edu.in/faculy_profiles/t-sivakumar/) and [Dr. V Yesubabu](https://scholar.google.co.in/citations?user=xFoyQPYAAAAJ&hl=en) (NARL)
 <h5 style="font-weight: normal; margin-top: -20px; margin-bottom: 20px">
 <a href="https://drive.google.com/file/d/17ZwGiB97MLZjE78X1CTeZvsqxF4Y483-/view?usp=sharing">[Degree]</a> <a href="https://drive.google.com/file/d/1LjfopVJHvNvdqeA7JZ5JJAtS24-VWGiZ/view?usp=sharing">[Transcript]</a>
@@ -47,9 +47,16 @@ Graduated with First Class and Distinction with GPA 8.59
 </h5>  
 ---
 
-  
-# 📜 Licenses & Certifications
 
+
+
+<div class="page-content">
+  <div class="wrapper">
+  <p><br/><br/></p>
+  </div>
+</div>
+  
+# 📜 Licenses & Certifications  
 
 | Title                                                  | Issued By                              | Year | Link         |
 |--------------------------------------------------------|----------------------------------------|------|--------------|
