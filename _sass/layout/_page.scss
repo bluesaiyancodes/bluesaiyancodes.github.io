@@ -399,3 +399,92 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/*
+   Callout
+   ========================================================================== */
+
+.callout {
+  background-color: #f9f9fc;
+  border-left: 4px solid #6c63ff;
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.callout.yellow {
+  background-color: #fff8dc; /* light yellow (cornsilk) */
+  border-left: 4px solid #fbc02d;
+  padding: 1em 1.2em;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.callout.yellow a {
+  color: #d17c00;
+  text-decoration: underline;
+}
+
+.callout.yellow p {
+  margin: 0;
+}
+
+
+/*
+   Image gallery
+   ========================================================================== */
+
+   .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .crop {
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    width: 300px;
+    position: relative;
+  }
+  
+  .crop-16x9 {
+    aspect-ratio: 16 / 9;
+  }
+  
+  .crop-3x4 {
+    aspect-ratio: 3 / 4;
+  }
+  
+  .crop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+
