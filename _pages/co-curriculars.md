@@ -66,11 +66,11 @@ This page highlights my involvement in community service, academic leadership, e
 📊 Over 130 hours of logged volunteer time between 2023–2025. <a href ="https://drive.google.com/file/d/1Rn0XTQsKL5-Xc6_9oLPL3-w5FRGaF3om/view?usp=sharing" target="_blank" rel="noopener noreferrer">[Certificate]</a>
 </div>
 
-- **Animal Shelter Volunteer**,Gumi 사랑보호소 _(2022–Present)_
+- **Animal Shelter Volunteer**, 구미사랑보호소 _(2022–Present)_  
   Assisting with animal care, hygiene, walks and adoption preparation for rescued dogs and cats.
-- **Children Education Volunteer**, 열린지역아동센터 _(2023–Present)_
-  Supporting after-school programs, including basic STEM education and facilitation learning through DIY kits for children.
-- **Gumi city Youth Participation Group**, 구미시청년정책참여단 _(2025)_
+- **Children Education Volunteer**, 열린지역아동센터 _(2023–Present)_  
+  Supporting after-school programs, including basic STEM education and facilitating learning through DIY kits for children.
+- **Gumi city Youth Participation Group**, 구미시청년정책참여단 _(2025)_  
   Contributing to youth policy planning initiatives, offering feedback on community development and sustainability efforts.
 - **Merchants of Almsgiving (MoA) Group** KIT _(2023-2025)_  
   Participated in various volunteer activities throught the university campus and nearby local community.
