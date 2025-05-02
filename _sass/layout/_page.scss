@@ -486,5 +486,63 @@
     box-sizing: border-box;
     text-align: center;
   }
+
+  /*
+   Awards - co-curricular gallery
+   ========================================================================== */
+
+  .awards-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .video-card {
+    position: relative;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay span {
+    font-size: 48px;
+    color: white;
+  }
+  
+  .video-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .video-caption {
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
   
 

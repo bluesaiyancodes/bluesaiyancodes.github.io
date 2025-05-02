@@ -22,11 +22,32 @@ This page highlights my involvement in community service, academic leadership, e
 -->
 
 ## 🏆 Awards
-- **Best Video Award** – Kumoh National Institute of Technology <a href="https://youtu.be/1D0Ye_ExENc?si=cIBHKZ1y2E-qY7vo" target="_blank" rel="noopener noreferrer"> [Link]</a>  
+- **Best Video Award** – Kumoh National Institute of Technology
   🗓️ 2023 — Won award by KIT for producing a campus introduction video aimed at international students, featuring academic life, dormitories, and local attractions.
 
-- **Best Promotional Video Award** – Gwangju City <a href="https://youtu.be/CrisfJ-KsFw?si=lkOcfHTDdhnLY_Co" target="_blank" rel="noopener noreferrer"> [Link]</a>  
+- **Best Promotional Video Award** – Gwangju City
   🗓️ 2022 — Won award for creating a short video introducing the city of Gwangju, highlighting cultural and historical landmarks.
+
+  <div class="awards-gallery">
+  <div class="video-card">
+    <a href="https://youtu.be/1D0Ye_ExENc?si=cIBHKZ1y2E-qY7vo" target="_blank">
+      <img src="/images/thumbnail/thumb_kumoh.png" alt="KIT Promo Video">
+      <div class="overlay"><span>▶</span></div>
+    </a>
+    <div class="video-caption">
+      <strong>Best Video Award – KIT</strong><br>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <a href="https://youtu.be/CrisfJ-KsFw?si=lkOcfHTDdhnLY_Co" target="_blank">
+      <img src="/images/thumbnail/thumb_gwangju.png" alt="Gwangju Promo Video">
+      <div class="overlay"><span>▶</span></div>
+    </a>
+    <div class="video-caption">
+      <strong>Best Promotional Video Award</strong><br>
+    </div>
+  </div>
 
 ## 🌍 Leadership & Representation
 
@@ -94,7 +115,7 @@ This page highlights my involvement in community service, academic leadership, e
   </div>
   <div class="crop crop-16x9">
     <img src="/images/volunteer/volunteer_moa.jpg" alt="Gumi-KIT volunteer Group">
-    <div class="caption">MoA volunteer Group</div>
+    <div class="caption">MoA volunteer group</div>
   </div>
   <div class="crop crop-3x4">
     <img src="/images/volunteer/volunteer_children.jpg" alt="Volunteering at children center">
