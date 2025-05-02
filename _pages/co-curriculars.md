@@ -9,7 +9,7 @@ author_profile: true
 This page highlights my involvement in community service, academic leadership, event organization, and outreach activities beyond core research.
 
 <div class="callout">
-  <p>✨ <strong>If you're interested in organizing a joint outreach event or student activity, feel free to <a href="https://www.linkedin.com/in/bishal-swain" target="_blank" rel="noopener noreferrer">contact me</a>. </strong>
+  <p>✨ If you're interested in organizing a joint outreach event or student activity, feel free to <a href="https://www.linkedin.com/in/bishal-swain" target="_blank" rel="noopener noreferrer">contact me</a>.
   </p>
 </div>
 
