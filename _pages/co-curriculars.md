@@ -22,10 +22,10 @@ This page highlights my involvement in community service, academic leadership, e
 -->
 
 ## 🏆 Awards
-- **Best Video Award** – Kumoh National Institute of Technology
+- **Best Video Award** – Kumoh National Institute of Technology  
   🗓️ 2023 — Won award by KIT for producing a campus introduction video aimed at international students, featuring academic life, dormitories, and local attractions.
 
-- **Best Promotional Video Award** – Gwangju City
+- **Best Promotional Video Award** – Gwangju City  
   🗓️ 2022 — Won award for creating a short video introducing the city of Gwangju, highlighting cultural and historical landmarks.
 
   <div class="awards-gallery">
@@ -93,7 +93,7 @@ This page highlights my involvement in community service, academic leadership, e
   Supporting after-school programs, including basic STEM education and facilitating learning through DIY kits for children.
 - **Gumi city Youth Participation Group**, 구미시청년정책참여단 _(2025)_  
   Contributing to youth policy planning initiatives, offering feedback on community development and sustainability efforts.
-- **Merchants of Almsgiving (MoA) Group** KIT _(2023-2025)_  
+- **Merchants of Almsgiving (MoA) Group**, KIT _(2023-2025)_  
   Participated in various volunteer activities throught the university campus and nearby local community.
 - **Korean–English translation support**, CVPR Lab onboarding sessions
 
