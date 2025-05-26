@@ -32,10 +32,10 @@
 
 - name: WACV 2026
   url: https://wacv2025.thecvf.com/
-  location: USA
-  date: February 28 - March 04, 2026
-  abstract_deadline: "2025-07-07T23:59:59-12:00"
-  full_deadline: "2025-07-15T23:59:59-12:00"
+  location: Arizona, USA
+  date: March 06 - March 10, 2026
+  abstract_deadline: "2025-07-11T23:59:59-12:00"
+  full_deadline: "2025-07-18T23:59:59-12:00"
   category: CV
 
 - name: ICLR 2026
