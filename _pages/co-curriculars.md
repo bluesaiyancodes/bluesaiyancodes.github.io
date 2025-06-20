@@ -55,7 +55,7 @@ This page highlights my involvement in community service, academic leadership, e
   Planning and organizing cultural excursions, coordinated local liaisons, and curated the MICCAI 2025 city tour in Daejeon, Korea.
 
 - 👥 **Student Representative**, CVPR Lab _(2023–present)_  
-  Acted as a liaison between lab members and the faculty, managed shared resources, and facilitated onboarding.
+  Acting as a liaison between lab members and the faculty, managing shared resources, and facilitated onboarding.
 
 
 ## 🛠️ Event Organization
