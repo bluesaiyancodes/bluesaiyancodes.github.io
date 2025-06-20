@@ -7,7 +7,7 @@ excerpt: 'In this paper we propose utilizing the foundation model to guide the t
 date: 2024-10-03
 venue: 'Medical Image Computing and Computer Assisted Intervention <mark>[MICCAI]</mark>'
 slidesurl: 'https://cvpr-kit.github.io/SAM-Guided-Enhanced-Nuclei-Segmentation/'
-paperurl: 'https://proceedings.mlr.press/v250/swain24a.html'
+paperurl: 'https://link.springer.com/chapter/10.1007/978-3-031-72114-4_52'
 ---
 <mark>[MICCAI 2024] - Also published in Springer Nature Switzerland</mark>  
 <a href="https://link.springer.com/chapter/10.1007/978-3-031-72114-4_52">Springer</a>  
