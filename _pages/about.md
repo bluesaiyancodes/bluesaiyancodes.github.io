@@ -15,7 +15,7 @@ I'm **Bishal Swain (비샬)**, a third-year Ph.D. student at [Kumoh National Ins
 
 My research focuses on computer vision, particularly on out-of-distribution generalization, segmentation, and domain adaptation problems. Currently, I work on medical histopathology and material SEM (Scanning Electron Microscope) images.
 
-<mark>I'm graduating in <i>February 2026</i> and am actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
+<mark>I'm graduating in <i>June 2026</i> and am actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
 
