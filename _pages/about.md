@@ -64,6 +64,17 @@ My research focuses on computer vision, particularly on out-of-distribution gene
 
 <div class="media">
   <div class="media-body">
+    <h5 class="mt-0">Out-of-Distribution Nuclei Segmentation in Histology Imaging via Liquid Neural Networks with Modern Hopfield Layer</h5>
+    <h5 style="font-weight: normal; margin-top: -5px;">
+    <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
+    MICCAI 2025 <br>
+    <a href="https://papers.miccai.org/miccai-2025/0661-Paper3815.html">[PDF]</a> <a href="https://link.springer.com/chapter/10.1007/978-3-032-04981-0_38">[Link]</a>  <a href="https://github.com/CVPR-KIT/OOD-Nuclei-Segmentation-via-LNNs-with-MHN">[Project Page]</a>
+    </h5>
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-body">
     <h5 class="mt-0">Enhancing Nuclei Segmentation in Histology Images by Effectively Merging Task-Specific and Foundation Models</h5>
     <h5 style="font-weight: normal; margin-top: -5px;">
     <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
