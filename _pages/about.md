@@ -95,14 +95,3 @@ My research focuses on computer vision, particularly on out-of-distribution gene
     </h5>
   </div>
 </div>
-
-<div class="media">
-  <div class="media-body">
-    <h5 class="mt-0">Nuclei Segmentation in Histopathology Images with Enhanced U-Net3+</h5>
-    <h5 style="font-weight: normal; margin-top: -5px;">
-    <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
-    MIDL 2024 <br>
-    <a href="https://raw.githubusercontent.com/mlresearch/v250/main/assets/swain24a/swain24a.pdf">[PDF]</a> <a href="https://proceedings.mlr.press/v250/swain24a.html">[Link]</a>  <a href="https://cvpr-kit.github.io/NucleiSeg-in-Histopathology-Images/">[Project Page]</a>
-    </h5>
-  </div>
-</div>
