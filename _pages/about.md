@@ -9,7 +9,7 @@ redirect_from:
 
 <i class="fas fa-hands-praying"></i> Namaskara /nɔ.mɔs.kaː.rɔ/ 
 
-I'm **Bishal Swain (비샬)**, /bi-śāl/, a fourth-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
+I'm **Bishal Swain (ବିଶାଳ, 비샬)**, /bi-śāl/, a fourth-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
 
 *I currently serve as Social Events Officer for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
 
