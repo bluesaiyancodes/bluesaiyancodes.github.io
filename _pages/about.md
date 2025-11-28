@@ -9,13 +9,13 @@ redirect_from:
 
 <i class="fas fa-hands-praying"></i> Namaskara /nɔ.mɔs.kaː.rɔ/ 
 
-I'm **Bishal Swain (비샬)**, a third-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
+I'm **Bishal Swain (비샬)**, /bi-śāl/, a fourth-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
 
 *I currently serve as Social Events Officer for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
 
 My research focuses on computer vision, particularly on out-of-distribution generalization, segmentation, and domain adaptation problems. Currently, I work on medical histopathology and material SEM (Scanning Electron Microscope) images.
 
-<mark>I'm graduating in <i>June 2026</i> and am actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
+<mark>I'm graduating in <i>June 2026</i> and actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
 
