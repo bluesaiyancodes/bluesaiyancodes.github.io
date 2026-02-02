@@ -334,3 +334,30 @@ author_profile: true
 
 
 </style>
+
+
+<script>
+(function () {
+  const STORAGE_KEY = "research_selected_tab";
+
+  const tabs = {
+    academics: document.getElementById("tab-academics"),
+    industry: document.getElementById("tab-industry"),
+  };
+
+  // Restore previously selected tab
+  const saved = sessionStorage.getItem(STORAGE_KEY);
+  if (saved && tabs[saved]) {
+    tabs[saved].checked = true;
+  }
+
+  // Save tab when user switches
+  Object.entries(tabs).forEach(([key, input]) => {
+    input.addEventListener("change", () => {
+      if (input.checked) {
+        sessionStorage.setItem(STORAGE_KEY, key);
+      }
+    });
+  });
+})();
+</script>
