@@ -11,7 +11,8 @@ redirect_from:
 
 I'm **Bishal Swain (ବିଶାଳ, 비샬)**, /bi.ʃaːl/, a fourth-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
 
-*I currently serve as Social Events Officer for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
+*I currently serve as <u>VP Social and Sports</u> for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
+<!--Past: Social Events Officer  -->
 
 My research focuses on computer vision, particularly on out-of-distribution generalization, segmentation, and domain adaptation problems. Currently, I work on medical histopathology and material SEM (Scanning Electron Microscope) images.
 
