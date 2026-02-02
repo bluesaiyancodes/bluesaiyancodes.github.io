@@ -1,0 +1,11 @@
+{% assign pinned = include.projects | where: "pinned", true %}
+{% assign normal = include.projects | where_exp: "p", "p.pinned != true" %}
+
+<div class="projects-grid">
+  {% for p in pinned %}
+    {% include project_card.html p=p %}
+  {% endfor %}
+  {% for p in normal %}
+    {% include project_card.html p=p %}
+  {% endfor %}
+</div>

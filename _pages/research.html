@@ -1,11 +1,336 @@
 ---
 layout: archive
-title: "Journals and Conferences"
+title: "Research &amp; Projects"
 permalink: /research/
 author_profile: true
 ---
 
+<div class="projects-header">
+  <p class="projects-subtitle">
+    A curated list of things I’ve built, tested, and obsessed over.
+  </p>
+</div>
 
-{% for post in site.research reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% assign projects_all = site.research | sort: "start" | reverse %}
+
+{% assign acad = projects_all | where: "track", "academics" %}
+{% assign ind  = projects_all | where: "track", "industry" %}
+{% assign acad_count = acad | size %}
+{% assign ind_count  = ind  | size %}
+
+<div class="mini-tabs" role="tablist" aria-label="Project track tabs">
+  <input class="mini-tabs__input" type="radio" name="trackTabs" id="tab-academics" checked>
+  <label class="mini-tabs__tab" for="tab-academics" role="tab">
+    Academics <span class="mini-tabs__count">({{ acad_count }})</span>
+  </label>
+
+  <input class="mini-tabs__input" type="radio" name="trackTabs" id="tab-industry">
+  <label class="mini-tabs__tab" for="tab-industry" role="tab">
+    Industry <span class="mini-tabs__count">({{ ind_count }})</span>
+  </label>
+
+  <div class="mini-tabs__line" aria-hidden="true"></div>
+
+  <section class="mini-tabs__panel" id="panel-academics" role="tabpanel">
+    {% include projects_grid.html projects=acad %}
+  </section>
+
+  <section class="mini-tabs__panel" id="panel-industry" role="tabpanel">
+    {% include projects_grid.html projects=ind %}
+  </section>
+</div>
+
+
+<style>
+/* =========================================================
+   Projects / Research page (minimal + clear hierarchy)
+   ========================================================= */
+
+/* Header */
+.projects-header { margin-bottom: 1.1rem; }
+.projects-subtitle {
+  margin: 0;
+  opacity: 0.72;
+  max-width: 62ch;
+}
+
+/* =========================================================
+   Minimal Raised Tabs (like your reference, but cleaner)
+   ========================================================= */
+.mini-tabs {
+  position: relative;
+  margin-top: 12px;
+  padding-top: 6px;
+}
+
+/* hide radios */
+.mini-tabs__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* labels look like tabs */
+.mini-tabs__tab {
+  display: inline-block;
+  position: relative;
+  padding: 10px 14px;
+  margin-right: 10px;
+
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: 0.1px;
+
+  color: rgba(0,0,0,0.70);
+  cursor: pointer;
+  user-select: none;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  border-radius: 12px 12px 6px 6px;
+
+  transform: translateY(2px);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease,
+              color 160ms ease, box-shadow 160ms ease;
+}
+
+.mini-tabs__tab:hover {
+  color: rgba(0,0,0,0.86);
+}
+
+/* baseline under tabs */
+.mini-tabs__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 46px;              /* aligns under tabs */
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+}
+
+/* Active tab */
+#tab-academics:checked + .mini-tabs__tab,
+#tab-industry:checked + .mini-tabs__tab {
+  color: rgba(0,0,0,0.92);
+  background: rgba(255,255,255,0.92);
+  border-color: rgba(0,0,0,0.12);
+
+  transform: translateY(0px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  z-index: 2;
+}
+
+/* Panels */
+.mini-tabs__panel {
+  display: none;
+  padding-top: 18px;      /* space below baseline */
+}
+
+#tab-academics:checked ~ #panel-academics { display: block; }
+#tab-industry:checked ~ #panel-industry { display: block; }
+
+/* =========================================================
+   Grid + Card styles
+   ========================================================= */
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Card */
+.project-card {
+  display: block;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.85);
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.project-card__inner { padding: 14px 14px 12px; }
+
+/* Hard reset link styling */
+.project-card,
+.project-card:visited,
+.project-card:hover,
+.project-card:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.project-card * {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Hover */
+.project-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,0.18);
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+/* Thumbnail */
+.project-card__thumb {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.06);
+  margin-bottom: 10px;
+  background: rgba(0,0,0,0.02);
+}
+
+.project-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Title row */
+.project-card__title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-card__title {
+  margin: 0;
+  line-height: 1.25;
+  font-weight: 650;
+}
+
+.project-card__meta {
+  font-size: 0.78rem;
+  opacity: 0.60;
+  white-space: nowrap;
+}
+
+.project-card:hover .project-card__title {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Badges */
+.project-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 0.76rem;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.09);
+  background: rgba(0,0,0,0.025);
+  opacity: 0.92;
+  white-space: nowrap;
+}
+
+/* Kind */
+.badge--kind {
+  border-color: rgba(0, 140, 160, 0.22);
+  background: rgba(0, 140, 160, 0.09);
+}
+
+/* Status */
+.badge--status {
+  border-color: rgba(0,0,0,0.09);
+  background: rgba(0,0,0,0.025);
+}
+
+.badge--status-published {
+  border-color: rgba(166, 206, 57, 0.35);
+  background: rgba(166, 206, 57, 0.18);
+}
+
+.badge--status-submitted {
+  border-color: rgba(255, 170, 0, 0.28);
+  background: rgba(255, 170, 0, 0.12);
+}
+
+.badge--status-ongoing {
+  border-color: rgba(0, 120, 255, 0.20);
+  background: rgba(0, 120, 255, 0.10);
+}
+
+/* Pinned */
+.badge--pin {
+  border-color: rgba(120, 0, 255, 0.28);
+  background: rgba(120, 0, 255, 0.10);
+}
+
+/* Description */
+.project-card__excerpt {
+  margin: 0;
+  font-size: 0.86rem;
+  opacity: 0.76;
+  line-height: 1.45;
+}
+
+/* Chips */
+.project-card__stack {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font-size: 0.76rem;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.08);
+  opacity: 0.90;
+}
+
+/* =========================================================
+   Pinned icon (CSS-only)
+   ========================================================= */
+
+.project-card__thumb { position: relative; }
+
+.project-pin-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+    /* IMPORTANT: override any global img { width:100% } */
+  width: 26px !important;
+  height: 26px !important;
+  max-width: 26px !important;
+  max-height: 26px !important;
+
+  /* subtle “badge” feel so it reads on any thumbnail */
+  background: rgba(255,255,255,0.90);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px;
+  padding: 5px;
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  z-index: 2;
+
+  /* keeps the pin image itself from stretching */
+  object-fit: contain;
+}
+
+/* optional micro-interaction */
+.project-card:hover .project-pin-img {
+  transform: translateY(-1px);
+}
+
+
+
+
+</style>

@@ -17,8 +17,8 @@ main:
   - title: "Co-Curriculars"
     url: /co-curriculars/
 
-  #- title: "Research"
-  #  url: /research/    
+  - title: "Research"
+    url: /research/    
 
   #- title: "Talks"
   #  url: /talks/    

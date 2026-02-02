@@ -1,0 +1,59 @@
+{% assign p = include.p %}
+
+{%- capture project_years -%}
+  {{ p.start | date: "%Y" }}{% if p.end %}–{{ p.end | date: "%Y" }}{% else %}–Present{% endif %}
+{%- endcapture -%}
+
+<a class="project-card" href="{{ p.url | relative_url }}">
+  <article class="project-card__inner">
+
+    {% if p.thumbnail %}
+  <div class="project-card__thumb">
+    {% if p.pinned %}
+      <img
+        class="project-pin-img"
+        src="{{ '/assets/icons/push-pin.png' | relative_url }}"
+        alt="Pinned"
+        aria-hidden="true"
+        loading="lazy"
+      >
+    {% endif %}
+    <img src="{{ p.thumbnail | relative_url }}" alt="{{ p.title }} thumbnail" loading="lazy">
+  </div>
+{% endif %}
+
+
+    <header class="project-card__top">
+      <div class="project-card__title-row">
+        <h3 class="project-card__title">{{ p.title }}</h3>
+        {% if p.start %}
+          <span class="project-card__meta">{{ project_years }}</span>
+        {% endif %}
+      </div>
+
+      <div class="project-card__badges">
+        {% if p.project_kind %}
+          <span class="badge badge--kind">{{ p.project_kind }}</span>
+        {% endif %}
+
+        {% if p.status %}
+          {% assign st = p.status | downcase | replace: " ", "-" %}
+          <span class="badge badge--status badge--status-{{ st }}">{{ p.status }}</span>
+        {% endif %}
+      </div>
+    </header>
+
+    {% if p.excerpt %}
+      <p class="project-card__excerpt">{{ p.excerpt | strip_html | truncate: 160 }}</p>
+    {% endif %}
+
+    {% if p.stack %}
+      <div class="project-card__stack">
+        {% for s in p.stack limit: 5 %}
+          <span class="chip">{{ s }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </article>
+</a>

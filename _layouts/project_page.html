@@ -1,0 +1,287 @@
+---
+layout: default
+---
+
+<article class="proj">
+  <header class="proj-hero">
+    <div class="proj-title-row">
+  <a class="proj-back" href="/research/" aria-label="Back to projects">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path d="M15.5 19l-7-7 7-7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
+
+    <h1 class="proj-title">{{ page.title }}</h1>
+
+    <div class="proj-meta">
+      {% if page.project_kind %}<span class="badge badge--kind">{{ page.project_kind }}</span>{% endif %}
+      {% if page.status %}<span class="badge badge--status">{{ page.status }}</span>{% endif %}
+      {% if page.start %}
+        <span class="proj-date">
+          {{ page.start | date: "%b %Y" }}{% if page.end %} – {{ page.end | date: "%b %Y" }}{% else %} – Present{% endif %}
+        </span>
+      {% endif %}
+      {% if page.role %}<span class="proj-role">{{ page.role }}</span>{% endif %}
+    </div>
+
+    {% if page.links %}
+    <div class="proj-links">
+        {% for item in page.links %}
+        <a class="proj-link"
+            href="{{ item[1] }}"
+            target="_blank"
+            rel="noopener">
+            {{ item[0] }}
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+
+
+    {% if page.pdfs %}
+    <div class="proj-docs">
+        <span class="proj-docs-label">Documents</span>
+        <ul class="proj-docs-list">
+        {% for f in page.pdfs %}
+            <li>
+            <a href="{{ f.file | relative_url }}"
+                target="_blank"
+                rel="noopener"
+                class="proj-doc-link">
+                {{ f.name }}
+            </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+
+
+  </header>
+
+  {% if page.gallery %}
+    <section class="proj-section">
+      <h2 class="proj-h2">Highlights</h2>
+      <div class="proj-gallery">
+        {% for g in page.gallery %}
+          <figure class="proj-fig">
+            <img src="{{ g.src | relative_url }}" alt="{{ g.alt | default: page.title }}" loading="lazy">
+            {% if g.caption %}<figcaption>{{ g.caption }}</figcaption>{% endif %}
+          </figure>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.results %}
+    <section class="proj-section">
+      <h2 class="proj-h2">Results</h2>
+      <div class="proj-results">
+        {% for r in page.results %}
+          <div class="result-card">
+            <div class="result-title">{{ r.name }}</div>
+            <div class="result-value">{{ r.value }}</div>
+            {% if r.note %}<div class="result-note">{{ r.note }}</div>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  <section class="proj-section">
+    <h2 class="proj-h2">Details</h2>
+    <div class="proj-body">
+      {{ content }}
+    </div>
+  </section>
+
+  {% if page.stack %}
+    <section class="proj-section">
+      <h2 class="proj-h2">Stack</h2>
+      <div class="project-card__stack">
+        {% for s in page.stack %}
+          <span class="chip">{{ s }}</span>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+</article>
+
+<style>
+.proj { max-width: 900px; margin: 0 auto; padding: 8px 0 30px; }
+.proj-hero { margin-bottom: 14px; }
+.proj-title { margin: 0 0 8px; line-height: 1.15; }
+.proj-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.proj-date { font-size: 0.88rem; opacity: 0.65; }
+.proj-role { font-size: 0.88rem; opacity: 0.75; }
+
+.proj-links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px; }
+.proj-link {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.75);
+  text-decoration: none;
+}
+
+.proj-section { margin-top: 18px; }
+.proj-h2 { margin: 0 0 10px; font-size: 1.05rem; }
+
+.proj-gallery {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.proj-fig {
+  margin: 0;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.85);
+}
+.proj-fig img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  max-height: 420px;
+}
+
+.proj-fig figcaption { padding: 10px 12px; font-size: 0.86rem; opacity: 0.78; }
+
+.proj-results {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.result-card {
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,0.85);
+}
+.result-title { font-size: 0.85rem; opacity: 0.70; }
+.result-value { font-size: 1.35rem; font-weight: 750; margin-top: 2px; }
+.result-note { font-size: 0.82rem; opacity: 0.70; margin-top: 6px; }
+
+.proj-body { opacity: 0.92; line-height: 1.65; }
+
+/* =========================================================
+   Back button + title row
+   ========================================================= */
+
+.proj-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* Circular back button */
+.proj-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+
+  border: 1px solid rgba(0,0,0,0.14);
+  background: rgba(255,255,255,0.85);
+
+  color: rgba(0,0,0,0.75);
+  text-decoration: none;
+
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    background 140ms ease,
+    color 140ms ease;
+}
+
+/* Hover: subtle lift */
+.proj-back:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.95);
+  color: rgba(0,0,0,0.92);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+/* Keyboard focus */
+.proj-back:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,120,255,0.25);
+}
+
+/* =========================================================
+   Project documents (PDFs)
+   ========================================================= */
+
+.proj-docs {
+  margin-top: 14px;
+}
+
+.proj-docs-label {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin-bottom: 6px;
+}
+
+.proj-docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proj-docs-list li {
+  margin: 4px 0;
+}
+
+.proj-doc-link {
+  position: relative;
+  padding-left: 24px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  opacity: 0.90;
+}
+
+/* small document icon */
+.proj-doc-link::before {
+  content: "📄 ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.65;
+  font-size: 0.95rem;
+}
+
+/* external indicator */
+.proj-doc-link::after {
+  content: "↗";
+  margin-left: 4px;
+  font-size: 0.8em;
+  opacity: 0.45;
+}
+
+.proj-doc-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+
+</style>
