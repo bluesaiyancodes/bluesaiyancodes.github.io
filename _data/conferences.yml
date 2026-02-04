@@ -1,9 +1,9 @@
-- name: MICCAI 2025
-  url: https://conferences.miccai.org/2025/en/default.asp
-  location: Daejeon, South Korea
-  date: September 23–27, 2025
-  abstract_deadline: "2025-02-13T23:59:59-12:00"
-  full_deadline: "2025-02-27T23:59:59-12:00"
+- name: MICCAI 2026
+  url: https://conferences.miccai.org/2026/en/default.asp
+  location: Abu Dhabi, UAE
+  date: October 04–08, 2026
+  abstract_deadline: "2026-02-12T23:59:59+08:00"  # PST
+  full_deadline: "2026-02-26T23:59:59+08:00"      # PST
   category: Med
 
 - name: BMCV 2025
@@ -56,17 +56,17 @@
 
 - name: ECCV 2026
   url: https://eccv2024.ecva.net/Conferences/2026
-  location: NA
-  date: May 04-08, 2026
-  abstract_deadline: "2026-02-28T23:59:59-12:00"
-  full_deadline: "2026-03-06T23:59:59-12:00"
+  location: Malmo, Sweden
+  date: September 08-13, 2026
+  abstract_deadline: "2026-02-26T23:59:59-01:00"  # CET
+  full_deadline: "2026-03-05T23:59:59-01:00"      # CET
   category: CV
 
 - name: ICML 2026
   url: https://icml.cc/Conferences/2026
   location: Seoul, Korea
   date: Aug 17-21, 2026
-  abstract_deadline: "2026-01-23T23:59:59-12:00"
+  abstract_deadline: "2026-02-26T23:59:59-12:00"
   full_deadline: "2026-01-28T23:59:59-12:00"
   category: ML
 

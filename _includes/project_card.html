@@ -4,23 +4,45 @@
   {{ p.start | date: "%Y" }}{% if p.end %}–{{ p.end | date: "%Y" }}{% else %}–Present{% endif %}
 {%- endcapture -%}
 
+{% assign is_ongoing = false %}
+{% if p.status %}
+  {% assign status_norm = p.status | downcase %}
+  {% if status_norm == "ongoing" %}
+    {% assign is_ongoing = true %}
+  {% endif %}
+{% endif %}
+
+{% if is_ongoing %}
+<div class="project-card project-card--locked" aria-disabled="true">
+{% else %}
 <a class="project-card" href="{{ p.url | relative_url }}">
+{% endif %}
   <article class="project-card__inner">
 
-    {% if p.thumbnail %}
-  <div class="project-card__thumb">
-    {% if p.pinned %}
-      <img
-        class="project-pin-img"
-        src="{{ '/assets/icons/push-pin.png' | relative_url }}"
-        alt="Pinned"
-        aria-hidden="true"
-        loading="lazy"
-      >
+    {% if p.thumbnail or is_ongoing %}
+    <div class="project-card__thumb{% if is_ongoing %} project-card__thumb--locked{% endif %}">
+      {% if p.pinned %}
+        <img
+          class="project-pin-img"
+          src="{{ '/assets/icons/push-pin.png' | relative_url }}"
+          alt="Pinned"
+          aria-hidden="true"
+          loading="lazy"
+        >
+      {% endif %}
+      {% if p.thumbnail %}
+        <img src="{{ p.thumbnail | relative_url }}" alt="{{ p.title }} thumbnail" loading="lazy">
+      {% endif %}
+      {% if is_ongoing %}
+        <img
+          class="project-classified-img"
+          src="{{ '/assets/icons/classified-stamp.svg' | relative_url }}"
+          alt="Classified"
+          loading="lazy"
+        >
+      {% endif %}
+    </div>
     {% endif %}
-    <img src="{{ p.thumbnail | relative_url }}" alt="{{ p.title }} thumbnail" loading="lazy">
-  </div>
-{% endif %}
 
 
     <header class="project-card__top">
@@ -56,4 +78,8 @@
     {% endif %}
 
   </article>
+{% if is_ongoing %}
+</div>
+{% else %}
 </a>
+{% endif %}
