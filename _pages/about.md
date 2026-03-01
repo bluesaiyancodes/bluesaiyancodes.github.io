@@ -45,11 +45,11 @@ My research focuses on computer vision, particularly on out-of-distribution gene
 
 ## <i class="fas fa-newspaper"></i>  Recent News
 
+-  *Feb 2026*: Paper selected for publication at CVPR 2026.
+-  *Jan 2026*: Appointed as VP Social & Sports for MICCAI Student Board 2026.
 -  *Nov 2025*: Paper selected for publication at WACV 2026.
 -  *Oct 2025*: Recieved TOPIK Level 5 Proficiency.
 -  *Jun 2025*: Paper selected for publication at MICCAI 2025.
--  *Jan 2025*: Appointed as Social Events Officer for MICCAI Student Board 2025.
--  *Dec 2024*: Published one journal paper.
 
 
 ---

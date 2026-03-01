@@ -6,7 +6,7 @@
 
 {% assign is_ongoing = false %}
 {% if p.status %}
-  {% assign status_norm = p.status | downcase %}
+  {% assign status_norm = p.status | downcase | strip %}
   {% if status_norm == "ongoing" %}
     {% assign is_ongoing = true %}
   {% endif %}
