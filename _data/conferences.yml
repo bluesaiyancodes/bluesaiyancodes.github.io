@@ -8,18 +8,18 @@
 
 - name: BMCV 2025
   url: https://bmvc2025.bmva.org/
-  location: Sheffield, UK
-  date: November 24–27, 2025
-  abstract_deadline: "2025-05-13T23:59:59-00:00"  # GMT
-  full_deadline: "2025-05-16T23:59:59-00:00"      # GMT
+  location: Lancaster, UK
+  date: November 23–26, 2026
+  abstract_deadline: "2025-05-22T23:59:59-00:00"  # GMT
+  full_deadline: "2025-05-29T23:59:59-00:00"      # GMT
   category: CV
 
-- name: NeurIPS 2025
-  url: https://nips.cc/Conferences/2025
-  location: San Diego, USA
-  date: December 02–07, 2025
-  abstract_deadline: "2025-05-11T23:59:59-12:00"
-  full_deadline: "2025-05-15T23:59:59-12:00"
+- name: NeurIPS 2026
+  url: https://nips.cc/Conferences/2026
+  location: Sydney, Australia
+  date: December 06–12, 2026
+  abstract_deadline: "2026-05-02T23:59:59-12:00"
+  full_deadline: "2026-05-06T23:59:59-12:00"
   category: ML
 
 - name: AAAI 2026
@@ -60,6 +60,14 @@
   date: September 08-13, 2026
   abstract_deadline: "2026-02-26T23:59:59-01:00"  # CET
   full_deadline: "2026-03-05T23:59:59-01:00"      # CET
+  category: CV
+
+- name: ACCV 2026
+  url: https://accv2026.org/
+  location: Osaka, Japan
+  date: December 14-18, 2026
+  abstract_deadline: "2026-07-23T23:59:59-00:00"  # GMT
+  full_deadline: "2026-07-05T23:59:59-00:00"      # GMT
   category: CV
 
 - name: ICML 2026
