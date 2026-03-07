@@ -1,0 +1,14 @@
+---
+title: "Guided Texture Segmentation via Coordinate-Aware Class-Ratio Mapping"
+collection: publications
+category: conferences
+permalink: /publication/2026-03-06-texture-wacv26
+excerpt: 'We introduce a guided segmentation framework for texture-rich images that leverages coordinate-aware class-ratio mapping to incorporate global distributional priors into pixel-level predictions. Expected class proportions are transformed into spatial maps and fused with encoder representations through an adaptive gate, enforcing consistency between global composition and local evidence. This conditioning enables the model to resolve ambiguous textures commonly found in metallographic SEM images.'
+date: 2026-03-06
+venue: 'IEEE/CVF Winter Conference on Applications of Computer Vision <mark>[WACV]</mark>'
+paperurl: 'https://link.springer.com/chapter/10.1007/978-3-032-04981-0_38'
+---  
+<a href="https://openaccess.thecvf.com/content/WACV2026/papers/Swain_Guided_Texture_Segmentation_via_Coordinate-Aware_Class-Ratio_Mapping_WACV_2026_paper.pdf">CVF Access</a>
+<a href="https://github.com/CVPR-KIT/Guided-Texture-Segmentation-via-Coordinate-Aware-Class-Ratio-Mapping">Project Page</a>
+
+Segmenting texture-rich images is challenging due to the presence of various local ambiguities. These are common in domains like metallography, where scanning electron microscopy (SEM) images must be segmented to quantify different elements that determine material properties. Conventional encoder-decoder models often struggle in these scenarios because they rely solely on local features and lack global distributional awareness. We propose a guided segmentation framework that introduces coordinate-aware class-ratio mapping. It is a mechanism that transforms expected class proportions into spatial maps and integrates them with encoder features via an adaptive gate fusion module. This enforces consistency between global class ratios and local pixel predictions, allowing the model to resolve ambiguous textures more effectively. Unlike traditional methods, we condition the model on image-specific global ratios, which can be obtained from experts or estimated in an auto-regressive method. Extensive experiments on metallographic SEM benchmarks demonstrate that our framework consistently improves performance across diverse backbones, achieving up to +6.1% Dice score improvements with minimal parameter overhead (<2%). Ablation studies confirm that both coordinate-aware class-ratio mapping and the adaptive gate fusion module contribute complementary benefits. In addition, we demonstrate that segmentation performance improves provided that the accuracy of the input class ratios is at least 60%.

@@ -64,6 +64,19 @@ My research focuses on computer vision, particularly on out-of-distribution gene
 ## <i class="fas fa-file-contract"></i>  Recent Publications
 
 <div class="media">
+  <!-- <img class="mr-3" src="/images/paper2_thumbnail.png" width="100"> -->
+  <div class="media-body">
+    <h5 class="mt-0">Guided Texture Segmentation via Coordinate-Aware Class-Ratio Mapping</h5>
+    <h5 style="font-weight: normal; margin-top: -5px;">
+    <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
+    WACV 2026 <br>
+    <a href="https://openaccess.thecvf.com/content/WACV2026/papers/Swain_Guided_Texture_Segmentation_via_Coordinate-Aware_Class-Ratio_Mapping_WACV_2026_paper.pdf">[PDF]</a> <a href="https://openaccess.thecvf.com/content/WACV2026/html/Swain_Guided_Texture_Segmentation_via_Coordinate-Aware_Class-Ratio_Mapping_WACV_2026_paper.html">[Link]</a>  <a href="https://github.com/CVPR-KIT/Guided-Texture-Segmentation-via-Coordinate-Aware-Class-Ratio-Mapping">[Project Page]</a>
+    </h5>
+  </div>
+</div>
+
+
+<div class="media">
   <div class="media-body">
     <h5 class="mt-0">Out-of-Distribution Nuclei Segmentation in Histology Imaging via Liquid Neural Networks with Modern Hopfield Layer</h5>
     <h5 style="font-weight: normal; margin-top: -5px;">
@@ -85,14 +98,3 @@ My research focuses on computer vision, particularly on out-of-distribution gene
   </div>
 </div>
 
-<div class="media">
-  <!-- <img class="mr-3" src="/images/paper2_thumbnail.png" width="100"> -->
-  <div class="media-body">
-    <h5 class="mt-0">SAM Guided Task-Specific Enhanced Nuclei Segmentation in Digital Pathology</h5>
-    <h5 style="font-weight: normal; margin-top: -5px;">
-    <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
-    MICCAI 2024 <br>
-    <a href="https://papers.miccai.org/miccai-2024/paper/3533_paper.pdf">[PDF]</a> <a href="https://link.springer.com/chapter/10.1007/978-3-031-72114-4_52">[Link]</a>  <a href="https://cvpr-kit.github.io/SAM-Guided-Enhanced-Nuclei-Segmentation/">[Project Page]</a>
-    </h5>
-  </div>
-</div>
