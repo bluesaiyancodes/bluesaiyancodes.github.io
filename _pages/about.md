@@ -16,7 +16,10 @@ I'm **Bishal Swain (ବିଶାଳ, 비샬)**, /bi.ʃaːl/, a fourth-year Ph.D.
 
 My research focuses on computer vision, particularly on out-of-distribution generalization, segmentation, and domain adaptation problems. Currently, I work on medical histopathology and material SEM (Scanning Electron Microscope) images.
 
+<!--  
 <mark>I'm graduating in <i>June 2026</i> and actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
+-->
+
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
 
@@ -40,6 +43,12 @@ My research focuses on computer vision, particularly on out-of-distribution gene
 </div>
 
 </div>
+---
+
+## <i class="fas fa-briefcase"></i>  Research Experience
+
+- **Research Intern**, National Atmosperic Research Lab — *2019.11-2020.05*  
+- **Research Associate**, Dream Lab, Indian Institute of Science — *2020.06–2021-07*  
 
 ---
 
@@ -51,13 +60,11 @@ My research focuses on computer vision, particularly on out-of-distribution gene
 -  *Oct 2025*: Recieved TOPIK Level 5 Proficiency.
 -  *Jun 2025*: Paper selected for publication at MICCAI 2025.
 
-
 ---
 
-## <i class="fas fa-briefcase"></i>  Research Experience
 
-- **Research Intern**, National Atmosperic Research Lab — *2019.11-2020.05*  
-- **Research Associate**, Dream Lab, Indian Institute of Science — *2020.06–2021-07*  
+
+
 
 ---
 
