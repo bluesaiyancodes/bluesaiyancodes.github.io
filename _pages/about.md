@@ -11,14 +11,30 @@ redirect_from:
 
 I'm **Bishal Swain (ବିଶାଳ, 비샬)**, /bi.ʃaːl/, a fourth-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
 
-*I currently serve as <u>VP Social and Sports</u> for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
+*I currently serve as <u>Vice President</u> for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
 <!--Past: Social Events Officer  -->
 
-My research focuses on computer vision, particularly on out-of-distribution generalization, segmentation, and domain adaptation problems. Currently, I work on medical histopathology and material SEM (Scanning Electron Microscope) images.
+My research focuses on **segmentation under distribution shift** by taking modeling inspiration from the human brain, specifically **hippo-cortical interaction**. Rather than treating features as static inputs, I design systems that reason over data as an *evolving sequence shaped by the past and present*. 
+
+<mark>My goal is to build adaptive learning models that maintain stable and reliable performance across changing environments.</mark>
+
 
 <!--  
 <mark>I'm graduating in <i>June 2026</i> and actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
 -->
+
+<span style="margin-top: 6px; display: inline-block; font-size: 0.98em;">
+  Download CV
+  <a href="/files/cvs/CV-Bishal.pdf" download
+     style="color: #2a7faa; text-decoration: none; border-bottom: 1px solid rgba(42,127,170,0.45); margin-left: 4px;">
+    [en]
+  </a>
+  <span style="margin: 0 6px; color: #9ca3af;">|</span>
+  <a href="/files/cvs/CV-Bishal_kr.pdf" download
+     style="color: #2a7faa; text-decoration: none; border-bottom: 1px solid rgba(42,127,170,0.45); margin-left: 4px;">
+    [kr]
+  </a>
+</span>
 
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
