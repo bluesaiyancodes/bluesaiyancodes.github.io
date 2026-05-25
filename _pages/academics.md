@@ -48,6 +48,23 @@ Graduated with First Class and Distinction with GPA 8.59
 ---
 
 
+# 🧑‍🔬 Academic Services
+
+#### Awards
+- Recognized as a `Gold Reviewer` — Top 25% of reviewers, ICML 2026.
+
+#### Conference Reviewer
+- IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+- European Conference on Computer Vision (ECCV), 2026
+- International Conference on Machine Learning (ICML), 2026
+- International Conference on Artificial Neural Networks (ICANN), 2026
+- Annual Conference on Neural Information Processing Systems (NeurIPS), 2026
+
+#### Academic Participation
+- Committee Member, Registration and Travel Grants, MICCAI 2026
+- Vice President, MICCAI Student Board, 2026
+- Member, MICCAI Student Board, 2025
+
 
 
 <div class="page-content">

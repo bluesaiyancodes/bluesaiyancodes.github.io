@@ -70,6 +70,8 @@ My research focuses on **segmentation under distribution shift** by taking model
 
 ## <i class="fas fa-newspaper"></i>  Recent News
 
+-  *May 2026*: Recognized as Gold Reviewer for ICML 2026
+-  *May 2026*: Serving as committee member for MICCAI 2026 Registration and Travel grants.
 -  *Feb 2026*: Paper selected for publication at CVPR 2026.
 -  *Jan 2026*: Appointed as VP Social & Sports for MICCAI Student Board 2026.
 -  *Nov 2025*: Paper selected for publication at WACV 2026.
