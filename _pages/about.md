@@ -77,11 +77,6 @@ My research focuses on **segmentation under distribution shift** by taking model
 -  *Jan 2026*: Appointed as VP Social & Sports for MICCAI Student Board 2026.
 -  *Nov 2025*: Paper selected for publication at WACV 2026.
 -  *Oct 2025*: Recieved TOPIK Level 5 Proficiency.
-<!--
--  *Jun 2025*: Paper accepted for publication at MICCAI 2025.
-
--->
-
 
 
 
