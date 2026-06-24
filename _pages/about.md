@@ -86,6 +86,17 @@ My research focuses on **segmentation under distribution shift** by taking model
 ## <i class="fas fa-file-contract"></i>  Recent Publications
 
 <div class="media">
+  <div class="media-body">
+    <h5 class="mt-0">Coupling Liquid Time-Constant Encoders with Modern Hopfield Memory</h5>
+    <h5 style="font-weight: normal; margin-top: -5px;">
+    <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
+    CVPR 2026 <br>
+    <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Swain_Coupling_Liquid_Time-Constant_Encoders_with_Modern_Hopfield_Memory_CVPR_2026_paper.pdf">[PDF]</a> <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Swain_Coupling_Liquid_Time-Constant_Encoders_with_Modern_Hopfield_Memory_CVPR_2026_paper.html">[Link]</a>  
+    </h5>
+  </div>
+</div> 
+
+<div class="media">
   <!-- <img class="mr-3" src="/images/paper2_thumbnail.png" width="100"> -->
   <div class="media-body">
     <h5 class="mt-0">Guided Texture Segmentation via Coordinate-Aware Class-Ratio Mapping</h5>
@@ -109,14 +120,4 @@ My research focuses on **segmentation under distribution shift** by taking model
   </div>
 </div>
 
-<div class="media">
-  <div class="media-body">
-    <h5 class="mt-0">Enhancing Nuclei Segmentation in Histology Images by Effectively Merging Task-Specific and Foundation Models</h5>
-    <h5 style="font-weight: normal; margin-top: -5px;">
-    <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
-    JMIS 11(4):219-228 <br>
-    <a href="/files/jmis-11-4-219.pdf">[PDF]</a> <a href="https://www.jmis.org/archive/view_article?pid=jmis-11-4-219">[Link]</a> 
-    </h5>
-  </div>
-</div>
 
