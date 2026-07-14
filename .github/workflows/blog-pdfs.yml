@@ -1,0 +1,68 @@
+name: Generate blog PDFs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "_blog/**"
+      - "_layouts/blog-post.html"
+      - "_includes/blog-*.html"
+      - "_sass/layout/_blog.scss"
+      - "_config_pdf.yml"
+      - "assets/js/blog-navigation.js"
+      - "scripts/generate-blog-pdfs.js"
+      - "package.json"
+      - ".github/workflows/blog-pdfs.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-pdfs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install PDF renderer and Korean fonts
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+          sudo apt-get update
+          sudo apt-get install --yes fonts-noto-cjk fonts-noto-core
+
+      - name: Build site and generate PDFs
+        run: |
+          bundle exec jekyll build --config _config.yml,_config_pdf.yml
+          python3 -m http.server 4001 --directory _site > /tmp/blog-pdf-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          node scripts/generate-blog-pdfs.js
+
+      - name: Commit generated PDFs
+        run: |
+          git add files/blog
+          if git diff --cached --quiet; then
+            echo "Blog PDFs are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Generate blog PDFs"
+          git push

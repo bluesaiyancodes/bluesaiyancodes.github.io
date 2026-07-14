@@ -7,17 +7,21 @@ The research blog is a Jekyll `blog` collection. Every note is a Markdown file i
 
 Copy the two files in `blog-drafts/`, put one in each language directory, and give both the same `translation_key`. The per-post language toggle uses that key to find the paired URL. The translations remain separate Markdown sources, so they can differ where useful.
 
-## Markdown source downloads
+## PDF export
 
-The **Download Markdown** button uses the `repository` and `blog_settings.source_branch` values in `_config.yml`. It intentionally targets this repository's `master` branch:
+The compact **PDF download** control beside each post's reading time links to a pre-rendered A4 file in `files/blog/`. The filename uses the post's `translation_key` and language, such as `my-note-en.pdf`.
 
-```yaml
-repository: "bluesaiyancodes/bluesaiyancodes.github.io"
-blog_settings:
-  source_branch: "master"
+PDFs are generated from the completed Jekyll pages by headless Chromium through Playwright. This uses the same print CSS as the browser, preserves embedded HTML and images, and keeps English and Korean text selectable and searchable. Run the generator after building the site:
+
+```bash
+bundle exec jekyll build --config _config.yml,_config_pdf.yml
+python3 -m http.server 4001 --directory _site
+node scripts/generate-blog-pdfs.js
 ```
 
-Do not change `source_branch` when the public source links should keep targeting `master`.
+The `Generate blog PDFs` GitHub Actions workflow performs these steps automatically whenever a blog source, its layout, or its styles change. It installs Noto CJK and core script fonts, regenerates `files/blog/*.pdf`, and commits changed PDFs to `master`. Oversized article images are downsampled only for the PDF copy. The workflow needs repository **Contents: write** permission. Dedicated PDF styles live in `_sass/layout/_blog.scss`.
+
+`_config_pdf.yml` points generated asset URLs at the temporary local server. Before rendering, the generator rewrites article hyperlinks back to `https://bluesaiyancodes.github.io` so downloaded PDFs never contain localhost links.
 
 ## Giscus comments and reactions
 

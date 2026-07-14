@@ -1,0 +1,2 @@
+# Used only by scripts/generate-blog-pdfs.js and its GitHub Actions workflow.
+url: "http://127.0.0.1:4001"

@@ -19,7 +19,6 @@ repository               : "bluesaiyancodes/bluesaiyancodes.github.io"
 
 # Research blog settings; see docs/blog-setup.md.
 blog_settings:
-  source_branch           : "master"
   rss:
     enabled               : false
   giscus:

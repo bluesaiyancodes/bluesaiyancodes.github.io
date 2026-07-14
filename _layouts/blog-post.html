@@ -12,17 +12,17 @@ layout: default
       <p class="blog-post__eyebrow">{% if page.lang == 'ko' %}연구 노트{% else %}Research note{% endif %}</p>
       <h1 class="blog-post__title" itemprop="headline">{{ page.title }}</h1>
       {% if page.excerpt %}<p class="blog-post__lede" itemprop="description">{{ page.excerpt }}</p>{% endif %}
+      {% assign pdf_key = page.translation_key | default: page.title | slugify %}
+      {% assign pdf_lang = page.lang | default: 'en' %}
+      {% capture pdf_path %}/files/blog/{{ pdf_key }}-{{ pdf_lang }}.pdf{% endcapture %}
       <p class="blog-post__meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% if page.lang == 'ko' %}{{ page.date | date: "%Y년 %-m월 %-d일" }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}</time>
         {% if page.read_time %}<span>{% include read-time.html %}</span>{% endif %}
+        <span class="blog-post__meta-separator" aria-hidden="true">·</span>
+        <a class="blog-pdf-link" href="{{ pdf_path | relative_url }}" download data-pdf-filename="{{ pdf_key }}-{{ pdf_lang }}.pdf" aria-label="{% if page.lang == 'ko' %}PDF 내려받기{% else %}Download PDF{% endif %}" title="{% if page.lang == 'ko' %}PDF 내려받기{% else %}Download PDF{% endif %}">
+          <span aria-hidden="true">PDF</span><i class="fas fa-download" aria-hidden="true"></i>
+        </a>
       </p>
-      <div class="blog-post__tools">
-        {% if site.repository and page.path %}
-          <a class="blog-source-link" href="https://github.com/{{ site.repository }}/raw/{{ site.blog_settings.source_branch | default: 'master' }}/{{ page.path }}" download>
-            {% if page.lang == 'ko' %}Markdown 원본 받기{% else %}Download Markdown{% endif %}
-          </a>
-        {% endif %}
-      </div>
     </header>
     <section class="blog-post__content" itemprop="articleBody">{{ content }}</section>
     {% include blog-engagement.html %}
