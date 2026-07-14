@@ -68,7 +68,6 @@
     var nextMain = document.importNode(parsedMain, true);
     updateDocument(nextDocument);
     currentMain.replaceWith(nextMain);
-    activateGiscus(nextMain);
 
     if (window.MathJax && typeof window.MathJax.typesetPromise === "function") {
       window.MathJax.typesetPromise([nextMain]);
@@ -113,6 +112,7 @@
     }).then(function () {
       if (addHistory) window.history.pushState({ blogNavigation: true }, "", url.href);
       renderedUrl = window.location.href;
+      activateGiscus(document.querySelector("main.blog-main"));
       window.scrollTo(0, 0);
       focusPageTitle();
       countGoatCounter(previousUrl, 0);

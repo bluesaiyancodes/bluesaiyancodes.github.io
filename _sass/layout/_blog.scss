@@ -355,6 +355,9 @@ html[data-theme="dark"] .blog-main {
   font-size: 1.2rem;
 }
 
+.blog-engagement .giscus,
+.blog-engagement .giscus-frame { width: 100%; }
+
 .blog-main button:focus-visible,
 .blog-main a:focus-visible {
   outline: 2px solid var(--blog-accent-color);

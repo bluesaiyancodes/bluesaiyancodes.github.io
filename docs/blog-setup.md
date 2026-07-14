@@ -21,13 +21,28 @@ Do not change `source_branch` when the public source links should keep targeting
 
 ## Giscus comments and reactions
 
-Giscus provides GitHub Discussions-backed comments and reactions beneath each post. The repository name and ID are already configured, but Giscus remains disabled until GitHub Discussions supplies a category ID.
+Giscus is enabled and provides GitHub Discussions-backed comments and reactions beneath each post. It uses the repository's `Announcements` category:
+
+```yaml
+blog_settings:
+  giscus:
+    enabled: true
+    repo: "bluesaiyancodes/bluesaiyancodes.github.io"
+    repo_id: "R_kgDOOSLWcQ"
+    category: "Announcements"
+    category_id: "DIC_kwDOOSLWcc4DBLPN"
+    mapping: "pathname"
+    strict: "0"
+    reactions_enabled: "1"
+```
+
+The repository must keep GitHub Discussions enabled and the Giscus GitHub App installed. To reconfigure it later:
 
 1. In the repository's **Settings → Features**, enable **Discussions**.
 2. Install the [Giscus GitHub App](https://github.com/apps/giscus) for `bluesaiyancodes/bluesaiyancodes.github.io`.
 3. Keep or create the `Announcements` discussion category.
 4. At [giscus.app](https://giscus.app), enter `bluesaiyancodes/bluesaiyancodes.github.io`, choose `Announcements`, and copy only the generated `data-category-id` value.
-5. Add that ID and enable Giscus in `_config.yml`:
+5. Replace the category ID in `_config.yml` if it changed:
 
    ```yaml
    blog_settings:

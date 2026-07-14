@@ -23,11 +23,11 @@ blog_settings:
   rss:
     enabled               : false
   giscus:
-    enabled               : false
+    enabled               : true
     repo                  : "bluesaiyancodes/bluesaiyancodes.github.io"
     repo_id               : "R_kgDOOSLWcQ"
     category              : "Announcements"
-    category_id           : ""
+    category_id           : "DIC_kwDOOSLWcc4DBLPN"
     mapping               : "pathname"
     strict                : "0"
     reactions_enabled     : "1"
