@@ -17,6 +17,27 @@ url                      : https://bluesaiyancodes.github.io # the base hostname
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bluesaiyancodes/bluesaiyancodes.github.io"
 
+# Research blog settings; see docs/blog-setup.md.
+blog_settings:
+  source_branch           : "master"
+  rss:
+    enabled               : false
+  giscus:
+    enabled               : false
+    repo                  : "bluesaiyancodes/bluesaiyancodes.github.io"
+    repo_id               : "R_kgDOOSLWcQ"
+    category              : "Announcements"
+    category_id           : ""
+    mapping               : "pathname"
+    strict                : "0"
+    reactions_enabled     : "1"
+    emit_metadata         : "0"
+    input_position        : "bottom"
+    theme                 : "preferred_color_scheme"
+  goatcounter:
+    enabled               : true
+    code                  : "bluesaiyancodes"
+
 other:
   due_conf               : "True"  # remove if you don't want to show the due.conf link
 
@@ -186,6 +207,7 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - blog-drafts
   - tmp
   - vendor
 keep_files:
@@ -232,6 +254,9 @@ collections:
   research:
     output: true
     permalink: /:collection/:path/
+  blog:
+    output: true
+    permalink: /blog/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -255,6 +280,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
+  # _blog is Markdown-first and intentionally has its own presentation.
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: blog-post
+      read_time: true
+      comments: true
   - scope:
       path: ""
       type: teaching

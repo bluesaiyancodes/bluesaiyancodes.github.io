@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /blog/feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.title }} — Research blog</title>
+    <link>{{ site.url }}{{ site.baseurl }}/blog/</link>
+    <description>Research notes from {{ site.title }}.</description>
+    <language>{{ site.locale }}</language>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/blog/feed.xml" rel="self" type="application/rss+xml" />
+    {% assign feed_posts = site.blog | sort: "date" | reverse %}
+    {% for post in feed_posts %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <description>{{ post.excerpt | default: post.content | markdownify | strip_html | normalize_whitespace | xml_escape }}</description>
+        <content:encoded><![CDATA[{{ post.content | markdownify }}]]></content:encoded>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

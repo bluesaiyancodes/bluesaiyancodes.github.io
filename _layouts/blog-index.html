@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% assign sorted_posts = site.blog | sort: "date" | reverse %}
+<main id="main" class="blog-main blog-main--index" role="main">
+  <section class="blog-index" aria-labelledby="blog-title">
+    <header class="blog-index__header">
+      <div class="blog-index__intro">
+        <div>
+          <p class="blog-index__eyebrow">Research notes / 연구 노트</p>
+          <h1 id="blog-title" class="blog-index__title">{{ page.title }}</h1>
+          {% if page.excerpt %}<p class="blog-index__lede">{{ page.excerpt }}</p>{% endif %}
+        </div>
+        {% if site.blog_settings.rss.enabled %}<div class="blog-index__utilities"><a class="blog-rss-link" href="{{ '/blog/feed.xml' | relative_url }}"><i class="fas fa-rss" aria-hidden="true"></i><span>RSS feed</span></a></div>{% endif %}
+      </div>
+    </header>
+    {% assign rendered_groups = "|" %}
+    <div class="blog-index__list">
+      {% for post in sorted_posts %}
+        {% assign group_key = post.translation_key | default: post.path %}
+        {% capture group_token %}|{{ group_key }}|{% endcapture %}
+        {% unless rendered_groups contains group_token %}
+          {% include blog-post-card.html post=post %}
+          {% capture rendered_groups %}{{ rendered_groups }}{{ group_key }}|{% endcapture %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+    {% if site.blog.size == 0 %}<p class="blog-index__empty">No research notes are available yet.</p>{% endif %}
+  </section>
+</main>
+{% include blog-goatcounter.html %}
+<script src="{{ '/assets/js/blog-navigation.js' | relative_url }}" defer></script>

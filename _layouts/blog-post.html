@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% include base_path %}
+<main id="main" class="blog-main blog-main--post" role="main">
+  <article class="blog-post" lang="{{ page.lang | default: 'en' }}" itemscope itemtype="https://schema.org/BlogPosting">
+    <header class="blog-post__header">
+      <div class="blog-post__topbar">
+        <a class="blog-back-link" href="{{ '/blog/' | relative_url }}" data-blog-navigation><span aria-hidden="true">←</span> {% if page.lang == 'ko' %}모든 연구 노트{% else %}All research notes{% endif %}</a>
+        {% include blog-language-switcher.html %}
+      </div>
+      <p class="blog-post__eyebrow">{% if page.lang == 'ko' %}연구 노트{% else %}Research note{% endif %}</p>
+      <h1 class="blog-post__title" itemprop="headline">{{ page.title }}</h1>
+      {% if page.excerpt %}<p class="blog-post__lede" itemprop="description">{{ page.excerpt }}</p>{% endif %}
+      <p class="blog-post__meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% if page.lang == 'ko' %}{{ page.date | date: "%Y년 %-m월 %-d일" }}{% else %}{{ page.date | date: "%B %-d, %Y" }}{% endif %}</time>
+        {% if page.read_time %}<span>{% include read-time.html %}</span>{% endif %}
+      </p>
+      <div class="blog-post__tools">
+        {% if site.repository and page.path %}
+          <a class="blog-source-link" href="https://github.com/{{ site.repository }}/raw/{{ site.blog_settings.source_branch | default: 'master' }}/{{ page.path }}" download>
+            {% if page.lang == 'ko' %}Markdown 원본 받기{% else %}Download Markdown{% endif %}
+          </a>
+        {% endif %}
+      </div>
+    </header>
+    <section class="blog-post__content" itemprop="articleBody">{{ content }}</section>
+    {% include blog-engagement.html %}
+  </article>
+</main>
+{% include blog-goatcounter.html %}
+<script src="{{ '/assets/js/blog-navigation.js' | relative_url }}" defer></script>

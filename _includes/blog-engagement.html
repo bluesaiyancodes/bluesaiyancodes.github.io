@@ -1,0 +1,19 @@
+{% if page.comments and site.blog_settings.giscus.enabled and site.blog_settings.giscus.repo != "" and site.blog_settings.giscus.repo_id != "" and site.blog_settings.giscus.category != "" and site.blog_settings.giscus.category_id != "" %}
+  <section class="blog-engagement" aria-labelledby="comments-title">
+    <h2 id="comments-title" class="blog-engagement__title">{% if page.lang == 'ko' %}댓글과 반응{% else %}Comments and reactions{% endif %}</h2>
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ site.blog_settings.giscus.repo }}"
+      data-repo-id="{{ site.blog_settings.giscus.repo_id }}"
+      data-category="{{ site.blog_settings.giscus.category }}"
+      data-category-id="{{ site.blog_settings.giscus.category_id }}"
+      data-mapping="{{ site.blog_settings.giscus.mapping | default: 'pathname' }}"
+      data-strict="{{ site.blog_settings.giscus.strict | default: '0' }}"
+      data-reactions-enabled="{{ site.blog_settings.giscus.reactions_enabled | default: '1' }}"
+      data-emit-metadata="{{ site.blog_settings.giscus.emit_metadata | default: '0' }}"
+      data-input-position="{{ site.blog_settings.giscus.input_position | default: 'bottom' }}"
+      data-theme="{{ site.blog_settings.giscus.theme | default: 'preferred_color_scheme' }}"
+      data-lang="{{ page.lang | default: 'en' }}"
+      crossorigin="anonymous" async>
+    </script>
+  </section>
+{% endif %}

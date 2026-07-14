@@ -1,0 +1,30 @@
+{% assign representative = include.post %}
+{% assign english_post = nil %}
+{% assign korean_post = nil %}
+{% if representative.translation_key %}
+  {% for candidate in site.blog %}
+    {% if candidate.translation_key == representative.translation_key and candidate.lang == 'en' %}{% assign english_post = candidate %}{% endif %}
+    {% if candidate.translation_key == representative.translation_key and candidate.lang == 'ko' %}{% assign korean_post = candidate %}{% endif %}
+  {% endfor %}
+{% elsif representative.lang == 'ko' %}
+  {% assign korean_post = representative %}
+{% else %}
+  {% assign english_post = representative %}
+{% endif %}
+{% assign display_post = representative %}
+{% if english_post %}
+  {% assign display_post = english_post %}
+{% elsif korean_post %}
+  {% assign display_post = korean_post %}
+{% endif %}
+<article class="blog-card" lang="{{ display_post.lang | default: 'en' }}">
+  <p class="blog-card__meta">
+    <time datetime="{{ display_post.date | date_to_xmlschema }}">{% if display_post.lang == 'ko' %}{{ display_post.date | date: "%Y년 %-m월 %-d일" }}{% else %}{{ display_post.date | date: "%B %-d, %Y" }}{% endif %}</time>
+    <span aria-hidden="true">·</span>
+    <span class="blog-card__translations" aria-label="Available languages">
+      <span aria-hidden="true">[</span>{% if english_post %}<a href="{{ english_post.url | relative_url }}" hreflang="en" aria-label="Read in English" data-blog-navigation>EN</a>{% endif %}{% if english_post and korean_post %}<span aria-hidden="true">,</span>{% endif %}{% if korean_post %}<a href="{{ korean_post.url | relative_url }}" hreflang="ko" aria-label="한국어로 읽기" data-blog-navigation>한</a>{% endif %}<span aria-hidden="true">]</span>
+    </span>
+  </p>
+  <h2 class="blog-card__title"><a href="{{ display_post.url | relative_url }}" data-blog-navigation>{{ display_post.title }}</a></h2>
+  {% if display_post.excerpt %}<p class="blog-card__excerpt">{{ display_post.excerpt }}</p>{% endif %}
+</article>

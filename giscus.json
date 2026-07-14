@@ -1,0 +1,10 @@
+{
+  "origins": [
+    "https://bluesaiyancodes.github.io",
+    "https://giscus.app"
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+"
+  ],
+  "defaultCommentOrder": "oldest"
+}

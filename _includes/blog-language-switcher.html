@@ -1,0 +1,11 @@
+{% assign translation = nil %}
+{% if page.translation_key %}{% for candidate in site.blog %}{% if candidate.translation_key == page.translation_key and candidate.lang != page.lang %}{% assign translation = candidate %}{% endif %}{% endfor %}{% endif %}
+<nav class="blog-language-switch" aria-label="{% if page.lang == 'ko' %}언어 선택{% else %}Blog language{% endif %}">
+  {% if page.lang == 'en' %}
+    <span class="blog-language-switch__item blog-language-switch__item--active" aria-label="English" aria-current="page">EN</span>
+    {% if translation %}<span class="blog-language-switch__divider" aria-hidden="true">/</span><a class="blog-language-switch__item" href="{{ translation.url | relative_url }}" aria-label="한국어" data-blog-navigation>한</a>{% endif %}
+  {% else %}
+    {% if translation %}<a class="blog-language-switch__item" href="{{ translation.url | relative_url }}" aria-label="English" data-blog-navigation>EN</a><span class="blog-language-switch__divider" aria-hidden="true">/</span>{% endif %}
+    <span class="blog-language-switch__item blog-language-switch__item--active" aria-label="한국어" aria-current="page">한</span>
+  {% endif %}
+</nav>
