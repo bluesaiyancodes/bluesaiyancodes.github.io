@@ -39,7 +39,7 @@ The work ranged from medical images and steel microstructures to industrial insp
     <figcaption>Radar and time series</figcaption>
   </figure>
 </div>
-
+`
 Across those domains, the pattern stayed remarkably consistent:
 
 <div class="blog-research-map" role="img" aria-label="Research map: images and time series lead to distribution shift, scarce labels, and ambiguity; these motivate context, memory, and feedback">
