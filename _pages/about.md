@@ -9,13 +9,13 @@ redirect_from:
 
 <i class="fas fa-hands-praying"></i> Namaskara /nɔ.mɔs.kaː.rɔ/ 
 
-I'm **Bishal Swain (ବିଶାଳ, 비살, 丕薩)**, pronounced /bi.ʃaːl/. I recieved my Ph.D. in Computer Science from [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/). And recently, have joined as postdoctoral researcher in the Computer Vision & Pattern Recognition Lab ([lab website](http://cvpr.kumoh.ac.kr/)), working with Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/).
+I'm **Bishal Swain (ବିଶାଳ, 비살, 丕薩)**, /bi.ʃaːl/, and I recieved my Ph.D. in Computer Science from [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/) under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/). Recently, I have joined the same lab ([lab website](http://cvpr.kumoh.ac.kr/)) as a postdoctoral researcher.
 
 <!--
 *I currently serve as <u>Vice President</u> for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
 Past: Social Events Officer  -->
 
-My research focuses on **segmentation under distribution shift** by taking modeling inspiration from the human brain, specifically **hippo-cortical interaction**. I aim to design systems that reason over data as an *evolving sequence shaped by the past and present*. 
+My research focuses on **continual learning** by taking modeling inspiration from the human brain, specifically **hippo-cortical interaction**. I aim to design systems that reason over data as an *evolving sequence shaped by the past and present*. 
 
 <mark>My goal is to build adaptive learning models that maintain stable and reliable performance across changing environments.</mark>
 
