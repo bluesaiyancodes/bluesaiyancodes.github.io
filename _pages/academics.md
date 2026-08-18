@@ -12,9 +12,10 @@ redirect_from:
 
 ### Ph.D. in Computer Science  
 **Kumoh National Institute of Technology**, Gumi, South Korea  
-<small>*Sept 2022 – Present*</small>  
-Advisor: [Prof. Dr. Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/)  
-Research Area: Computer Vision, Out-of-Distribution, Medical and Materials Imaging  
+<small>*Sept 2022 – Aug 2026*</small>   
+Thesis Title - <mark>Brain-Inspired Continuous-Time Neurocomputational Model for Temporal Intelligence</mark>  [[link]](https://www-riss-kr.libproxy.kumoh.ac.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=ddded47a4556024bffe0bdc3ef48d419)<br/>
+Advisor - [Prof. Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/)<br/> 
+Research Area - Computer Vision, Out-of-Distribution, Medical and Materials Imaging  
 
 ---
 
@@ -30,7 +31,7 @@ Completed <mark>Level 4 Korean language</mark>.
 <small>*July 2018 – May 2020*</small>  
 Graduated with First Class and Distinction with GPA 9.36  
 Thesis Title - <mark>Study and Development of 3D Wind Pattern Visualization Models</mark>  [[link]](https://www.researchgate.net/publication/390794919_Study_and_Development_of_3D_Wind_Pattern_Visualization_Models)  
-Supervisors - Asst. Prof. [Dr. T. Sivakumar](https://www.pondiuni.edu.in/faculy_profiles/t-sivakumar/) and [Dr. V Yesubabu](https://scholar.google.co.in/citations?user=xFoyQPYAAAAJ&hl=en) (NARL)
+Advisors - Asst. Prof. [Dr. T. Sivakumar](https://www.pondiuni.edu.in/faculy_profiles/t-sivakumar/) and [Dr. V Yesubabu](https://scholar.google.co.in/citations?user=xFoyQPYAAAAJ&hl=en) (NARL)
 <h5 style="font-weight: normal; margin-top: -20px; margin-bottom: 20px">
 <a href="https://drive.google.com/file/d/17ZwGiB97MLZjE78X1CTeZvsqxF4Y483-/view?usp=sharing">[Degree]</a> <a href="https://drive.google.com/file/d/1LjfopVJHvNvdqeA7JZ5JJAtS24-VWGiZ/view?usp=sharing">[Transcript]</a>
 </h5>
@@ -59,6 +60,7 @@ Graduated with First Class and Distinction with GPA 8.59
 - International Conference on Machine Learning (ICML), 2026
 - International Conference on Artificial Neural Networks (ICANN), 2026
 - Annual Conference on Neural Information Processing Systems (NeurIPS), 2026
+- Annual AAAI Conference on Artificial Intelligence (AAAI), 2027
 
 #### Academic Participation
 - Committee Member, Registration and Travel Grants, MICCAI 2026

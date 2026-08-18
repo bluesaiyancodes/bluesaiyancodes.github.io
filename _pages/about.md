@@ -9,12 +9,12 @@ redirect_from:
 
 <i class="fas fa-hands-praying"></i> Namaskara /nɔ.mɔs.kaː.rɔ/ 
 
-I'm **Bishal Swain (ବିଶାଳ, 비살, 丕薩)**, /bi.ʃaːl/, a fourth-year Ph.D. student at [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/), working under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/) in the Computer Vision & Pattern Recognition Lab ([Lab Website](http://cvpr.kumoh.ac.kr/)).
+I'm **Bishal Swain (ବିଶାଳ, 비살, 丕薩)**, pronounced /bi.ʃaːl/. I recieved my Ph.D. in Computer Science from [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/) and have joined as postdoctoral researcher in its Computer Vision & Pattern Recognition Lab ([lab website](http://cvpr.kumoh.ac.kr/)), working with Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/).
 
 *I currently serve as <u>Vice President</u> for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
 <!--Past: Social Events Officer  -->
 
-My research focuses on **segmentation under distribution shift** by taking modeling inspiration from the human brain, specifically **hippo-cortical interaction**. Rather than treating features as static inputs, I design systems that reason over data as an *evolving sequence shaped by the past and present*. 
+My research focuses on **segmentation under distribution shift** by taking modeling inspiration from the human brain, specifically **hippo-cortical interaction**. I aim to design systems that reason over data as an *evolving sequence shaped by the past and present*. 
 
 <mark>My goal is to build adaptive learning models that maintain stable and reliable performance across changing environments.</mark>
 
@@ -44,7 +44,7 @@ My research focuses on **segmentation under distribution shift** by taking model
 <div style="flex: 1; min-width: 250px;">
 <p>
  <strong>Ph.D. in Computer Science</strong><br>
-2022–present<br>
+2022–2026<br>
 <small>Kumoh National Institute of Technology, South Korea</small>
 </p>
 </div>
@@ -70,6 +70,7 @@ My research focuses on **segmentation under distribution shift** by taking model
 
 ## <i class="fas fa-newspaper"></i>  Recent News
 
+- *Aug 2026*: Recieved my doctorate degree with Outstanding Thesis Award.
 -  *Jun 2026*: Paper accepted for publication at ICANN 2026.
 -  *May 2026*: Recognized as Gold Reviewer for ICML 2026.
 -  *Apr 2026*: Serving as committee member for MICCAI 2026 Registration and Travel grants.
@@ -119,5 +120,4 @@ My research focuses on **segmentation under distribution shift** by taking model
     </h5>
   </div>
 </div>
-
 

@@ -45,8 +45,8 @@ other:
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "bishal2.jpg"
-  name             : "Bishal Swain"
+  avatar           : "bishal3.jpg"
+  name             : "Dr. Bishal Swain"
   pronouns         : # example: "she/her"  
   bio              : "Deep Learning Researcher in the Making."
   location         : "South Korea"
