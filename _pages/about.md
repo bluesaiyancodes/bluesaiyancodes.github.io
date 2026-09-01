@@ -9,7 +9,7 @@ redirect_from:
 
 <i class="fas fa-hands-praying"></i> Namaskara /nɔ.mɔs.kaː.rɔ/ 
 
-I'm **Bishal Swain (ବିଶାଳ, 비살, 丕薩)**, /bi.ʃaːl/, and I recieved my Ph.D. in Computer Science from [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/) under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/). Recently, I have joined the same lab ([lab website](http://cvpr.kumoh.ac.kr/)) as a postdoctoral researcher.
+I'm **Bishal Swain (ବିଶାଳ, 비살, 丕薩)**, /bi.ʃaːl/, and I recieved my Ph.D. in Computer Science from [Kumoh National Institute of Technology](https://www.kumoh.ac.kr/) under the supervision of Prof. [Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/). Recently, I have joined the same lab ([lab website](http://cvpr.kumoh.ac.kr/)) as a researcher.
 
 <!--
 *I currently serve as <u>Vice President</u> for the [MICCAI Student Board](https://miccai-sb.github.io/organization.html).*
@@ -26,7 +26,8 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 
 <span style="margin-top: 6px; display: inline-block; font-size: 0.98em;">
   Download CV
-  <a href="/files/cvs/CV-Bishal.pdf" download
+  
+  <a href="" download
      style="color: #2a7faa; text-decoration: none; border-bottom: 1px solid rgba(42,127,170,0.45); margin-left: 4px;">
     [en]
   </a>
