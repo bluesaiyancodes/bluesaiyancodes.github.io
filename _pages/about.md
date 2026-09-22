@@ -22,7 +22,7 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 
 <!--  
 <mark>I'm graduating in <i>June 2026</i> and actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
--->
+
 
 <span style="margin-top: 6px; display: inline-block; font-size: 0.98em;">
   Download CV
@@ -37,6 +37,7 @@ My research focuses on **continual learning** by taking modeling inspiration fro
     [kr]
   </a>
 </span>
+-->
 
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
@@ -72,7 +73,8 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 
 ## <i class="fas fa-newspaper"></i>  Recent News
 
-- *Aug 2026*: Recieved my doctorate degree with Outstanding Thesis Award.
+-  *Sep 2026*: Presented paper at ICANN 2026.
+-  *Aug 2026*: Recieved my doctorate degree with Outstanding Thesis Award.
 -  *Jun 2026*: Paper accepted for publication at ICANN 2026.
 -  *May 2026*: Recognized as Gold Reviewer for ICML 2026.
 -  *Apr 2026*: Serving as committee member for MICCAI 2026 Registration and Travel grants.
@@ -87,6 +89,18 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 ---
 
 ## <i class="fas fa-file-contract"></i>  Recent Publications
+
+<div class="media">
+  <div class="media-body">
+    <h5 class="mt-0">Memory-Induced Attractor Dynamics in Liquid Time-Constant Networks</h5>
+    <h5 style="font-weight: normal; margin-top: -5px;">
+    <strong>B. Swain</strong>, J. Hwang, J. Ko. <br>
+    CVPR 2026 <br>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-032-38401-0_14">[PDF]</a> <a href="https://link.springer.com/chapter/10.1007/978-3-032-38401-0_14">[Link]</a>  
+    </h5>
+  </div>
+</div> 
+
 
 <div class="media">
   <div class="media-body">
