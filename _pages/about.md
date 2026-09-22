@@ -107,7 +107,7 @@ My research focuses on **continual learning** by taking modeling inspiration fro
     <h5 class="mt-0">Coupling Liquid Time-Constant Encoders with Modern Hopfield Memory</h5>
     <h5 style="font-weight: normal; margin-top: -5px;">
     <strong>B. Swain</strong>, K.J. Cheoi, J. Ko. <br>
-    CVPR 2026 <br>
+    ICANN 2026 <br>
     <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Swain_Coupling_Liquid_Time-Constant_Encoders_with_Modern_Hopfield_Memory_CVPR_2026_paper.pdf">[PDF]</a> <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Swain_Coupling_Liquid_Time-Constant_Encoders_with_Modern_Hopfield_Memory_CVPR_2026_paper.html">[Link]</a>  
     </h5>
   </div>

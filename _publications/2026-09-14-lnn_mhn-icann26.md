@@ -1,0 +1,13 @@
+---
+title: "Memory-Induced Attractor Dynamics in Liquid Time-Constant Networks"
+collection: publications
+category: conferences
+permalink: /publication/2026-03-06-lnn_mhn-cvpr26
+excerpt: 'While continuous-time models like Liquid Time-Constant (LTC) networks adapt flexibly to sequential data, their hidden states suffer from interference between incoming inputs and preserved long-range context. We introduce AM-LTC, an architecture that resolves this bottleneck by embedding Modern Hopfield associative memory directly into the differential state update via learned attractor dynamics. Across nine benchmark tasks, AM-LTC improves classification accuracy (from 87.18% to 89.43%) and regression MAE (from 0.251 to 0.243) over standard LTCs, while exhibiting superior robustness under increasing temporal sparsity.'
+date: 2026-09-14
+venue: '35th International Conference on Artificial Neural Networks <mark>(ICANN)</mark>'
+paperurl: 'https://link.springer.com/chapter/10.1007/978-3-032-38401-0_14'
+---  
+
+
+Continuous-time neural networks provide adaptive temporal dynamics for sequential data. However, their hidden state must simultaneously respond to rapidly changing inputs and preserve longer-range context within a single evolving representation. This creates a representational bottleneck, as newly arriving observations can interfere with previously accumulated temporal information. To alleviate this limitation, we propose Memory-Induced Attractor Dynamics in Liquid Time-Constant Networks (AM-LTC), a continuous-time sequence model that integrates trainable memory directly into the hidden-state update. At each time step, the model computes a provisional LTC state, retrieves a memory state through a Modern Hopfield Network, and updates the hidden state through a learned pull toward the retrieved pattern. This allows memory to shape the recurrent transition itself rather than acting only as a representation-level augmentation. Across six classification and three regression benchmarks, AM-LTC improves the average classification accuracy from 87.18 to 89.43 and reduces the average regression MAE from 0.251 to 0.243 relative to LTC. We also demonstrate robustness of AM-LTC under increasing sparsity where it retains highest accuracy compared baseline methods. These results show that memory-based state modulation can improve both robustness and predictive performance in continuous-time sequence models.
