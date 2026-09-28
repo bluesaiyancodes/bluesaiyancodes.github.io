@@ -22,22 +22,22 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 
 <!--  
 <mark>I'm graduating in <i>June 2026</i> and actively seeking <i>job opportunities</i> (postdoc/industry research roles). </mark>
-
+-->
 
 <span style="margin-top: 6px; display: inline-block; font-size: 0.98em;">
   Download CV
   
-  <a href="" download
+  <a href="/files/cvs/CV-Bishal_2609.pdf" download
      style="color: #2a7faa; text-decoration: none; border-bottom: 1px solid rgba(42,127,170,0.45); margin-left: 4px;">
     [en]
   </a>
   <span style="margin: 0 6px; color: #9ca3af;">|</span>
-  <a href="/files/cvs/CV-Bishal_kr.pdf" download
+  <a href="/files/cvs/CV-Bishal_kr_2609.pdf" download
      style="color: #2a7faa; text-decoration: none; border-bottom: 1px solid rgba(42,127,170,0.45); margin-left: 4px;">
     [kr]
   </a>
 </span>
--->
+
 
 
 <h2><i class="fas fa-graduation-cap"></i>  Education</h2>
