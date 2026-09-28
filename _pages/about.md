@@ -73,7 +73,7 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 
 ## <i class="fas fa-newspaper"></i>  Recent News
 
--  *Sep 2026*: Presented paper at ICANN 2026.
+-  *Sep 2026*: Paper accepted for publication at NeurIPS 2026.
 -  *Aug 2026*: Recieved my doctorate degree with Outstanding Thesis Award.
 -  *Jun 2026*: Paper accepted for publication at ICANN 2026.
 -  *May 2026*: Recognized as Gold Reviewer for ICML 2026.
@@ -81,9 +81,9 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 -  *Feb 2026*: Paper accepted for publication at CVPR 2026.
 -  *Jan 2026*: Appointed as VP Social & Sports for MICCAI Student Board 2026.
 -  *Nov 2025*: Paper selected for publication at WACV 2026.
+<!-- 
 -  *Oct 2025*: Recieved TOPIK Level 5 Proficiency.
-
-
+-->
 
 
 ---

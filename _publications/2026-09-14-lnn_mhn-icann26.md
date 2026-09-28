@@ -2,7 +2,7 @@
 title: "Memory-Induced Attractor Dynamics in Liquid Time-Constant Networks"
 collection: publications
 category: conferences
-permalink: /publication/2026-03-06-lnn_mhn-cvpr26
+permalink: /publication/2026-03-06-lnn_mhn-icann26
 excerpt: 'While continuous-time models like Liquid Time-Constant (LTC) networks adapt flexibly to sequential data, their hidden states suffer from interference between incoming inputs and preserved long-range context. We introduce AM-LTC, an architecture that resolves this bottleneck by embedding Modern Hopfield associative memory directly into the differential state update via learned attractor dynamics. Across nine benchmark tasks, AM-LTC improves classification accuracy (from 87.18% to 89.43%) and regression MAE (from 0.251 to 0.243) over standard LTCs, while exhibiting superior robustness under increasing temporal sparsity.'
 date: 2026-09-14
 venue: '35th International Conference on Artificial Neural Networks <mark>(ICANN)</mark>'
