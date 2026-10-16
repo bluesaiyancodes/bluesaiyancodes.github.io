@@ -13,7 +13,7 @@ redirect_from:
 ### Ph.D. in Computer Science  
 **Kumoh National Institute of Technology**, Gumi, South Korea  
 <small>*Sept 2022 – Aug 2026*</small>   
-Thesis Title - <mark>Brain-Inspired Continuous-Time Neurocomputational Model for Temporal Intelligence</mark>  [[link]](https://www-riss-kr.libproxy.kumoh.ac.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=ddded47a4556024bffe0bdc3ef48d419)<br/>
+Thesis Title - <mark>Brain-Inspired Continuous-Time Neurocomputational Model for Temporal Intelligence</mark>  [[link]](https://www.riss.kr/link?id=T17545333)<br/>
 Advisor - [Prof. Jaepil Ko](http://cvpr.kumoh.ac.kr/nonezero/)<br/> 
 Research Area - Computer Vision, Out-of-Distribution, Medical and Materials Imaging  
 

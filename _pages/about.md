@@ -80,9 +80,6 @@ My research focuses on **continual learning** by taking modeling inspiration fro
 -  *Feb 2026*: Paper accepted for publication at CVPR 2026.
 -  *Jan 2026*: Appointed as VP Social & Sports for MICCAI Student Board 2026.
 -  *Nov 2025*: Paper selected for publication at WACV 2026.
-<!-- 
--  *Oct 2025*: Recieved TOPIK Level 5 Proficiency.
--->
 
 
 ---
